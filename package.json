@@ -1,0 +1,33 @@
+{
+  "name": "@papack/email",
+  "description": "Minimal API for sending emails (Outbox) and receiving emails (Inbox).",
+  "version": "1.0.0",
+  "author": "Matthias Steiner",
+  "repository": "github:papack/email",
+  "homepage": "https://github.com/papack/email",
+  "publishConfig": {
+    "access": "public"
+  },
+  "module": "dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.mts",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "imapflow": "^1.2.4",
+    "mailparser": "^3.9.1",
+    "nodemailer": "^7.0.12"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/mailparser": "^3.4.6",
+    "@types/nodemailer": "^7.0.4",
+    "tsdown": "^0.18.4"
+  }
+}
